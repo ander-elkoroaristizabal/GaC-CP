@@ -1,8 +1,5 @@
----
-title: "Codebook"
-subtitle: "Getting and Cleaning Data: Courser Project"
-output: html_document
----
+# Codebook
+### Getting and Cleaning Data: Courser Project
 
 This is the codebook for the course project of Getting and Cleaning Data.
 

@@ -1,7 +1,4 @@
----
-title: "Readme"
-output: html_document
----
+# Readme
 
 This is the repo for the Course project of the Getting and Cleaning data course.
 
