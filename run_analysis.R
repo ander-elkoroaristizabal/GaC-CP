@@ -92,6 +92,6 @@ data[,"Subject"] = factor(data$Subject)
 
 # And do the final task:
 
-means_by_group = aggregate(data[ , 1:80], list(data$Subject,data$Activity), mean, na.rm =TRUE)
+means_by_group = aggregate(data[ , 1:79], list(data$Subject,data$Activity), mean, na.rm =TRUE)
 
 write.table(means_by_group, row.names = FALSE, file = "means_by_group.txt")
