@@ -2,5 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-GaC:CP.Rproj
-.DS_Store
+*.Rproj
+*.DS_Store
+UCI HAR Dataset/
+
+*.html
+
+*.zip
