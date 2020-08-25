@@ -1,14 +1,18 @@
-### GaC course project
+### Getting and Cleaning Data course project
 
-# # The source for the data is 
-# # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphoness
-# 
-# # We download the data from the given url using
-# download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
-#               destfile = "CPdata.zip", method = "curl")
-# 
-# # and unzip it with
-# unzip("CPdata.zip")
+# The website for the data is
+# http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphoness
+
+# If needed, we download the data from the given url to a temporary file
+if (!file.exists("UCI HAR Dataset")){
+        temp = tempfile()
+        download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
+              destfile = temp, method = "curl") # (the curl method is needed because of the https protocol)
+        # and unzip it
+        unzip(temp)
+        unlink(temp)
+}
+
 
 # We first get the column names:
 
